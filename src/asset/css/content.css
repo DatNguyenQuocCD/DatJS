@@ -1,0 +1,70 @@
+.products{
+    margin-top: 800px;
+}
+
+.product{
+    position: relative;
+    margin-top: 4%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.product img{
+    width: 100%;
+}
+
+.products h1, .products-shirt h1{
+    font-size: 200%;
+    color: rgb(153,153,151);
+}
+
+.products-shirt h1{
+    margin-top: 5%;
+}
+
+.product h1{
+    font-size: 120%;
+    color: rgb(211, 75, 17);
+    margin-top: 5%;
+}
+
+.product h4, .product p{
+    font-size: 120%;
+    color: rgb(153,153,151);
+    margin-top: 2%;
+}
+
+.old-price{
+    position: absolute;
+    transform: translate(250px,-33px);
+    color: rgb(211, 75, 17)!important;
+}
+
+.product p{
+    position: absolute;
+    padding: 5%;
+    width: 100%;
+    background-color: white;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.product:hover p{
+    transform: translateY(-240%);
+    opacity: 2;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product-list{
+    margin-top: 3%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}

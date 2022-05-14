@@ -1,0 +1,120 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Playfair Display", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.middle{
+    vertical-align: middle;
+}
+.black {
+  color: black;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ---------------------------------------header top---------------------------------- */
+
+.header-top{
+    background-color: rgb(28, 28, 28);
+    position: fixed;
+    z-index: 1000;
+}
+
+.sticky{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+#logo{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 4%;
+}
+
+#logo h1{
+    font-size: 200%;
+    padding: 5%;
+    color: white;
+    transition: all 0.5s;
+}
+
+.main_nav{
+    list-style: none;
+}
+
+.main_nav li a{
+    text-decoration: none;
+    float: left;
+    padding: 3% 4%;
+    color: white;
+    transition: all 0.5s;
+}
+
+#right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#right div i{
+    font-size: 150%;
+}
+
+.login{
+    padding: 12%;
+    transition: all 0.5s;
+}
+
+.login i{
+    padding: 5% 7%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.login p{
+    color: white;
+}
+
+.cartping{
+    padding: 20%;
+    color: white;
+    background-color: rgb(211, 75, 17);
+}
+
+#logo h1:hover,
+.main_nav li a:hover,
+.login:hover
+{
+    color: rgb(211, 75, 17);
+}
+/* -------------------------------------------------header middle-------------------------------- */
+.banner-top{
+    padding-top: 5%;
+}
+/* --------------------------------------------------header bottom------------------------------- */
+.banner-bottom{
+    position: absolute;
+    transform: translateY(-1%);
+}
+
